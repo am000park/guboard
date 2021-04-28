@@ -10,7 +10,7 @@
     </div>
     <div>
         <progress id="process_status" value="1" max="<?php echo $file_count ?>"></progress>
-        <div>
+        <div id="file_view_wrap">
             <!-- <img src="" id="fileView"> -->
             <ul id="fileView"></ul>
         </div>

@@ -12,3 +12,7 @@
 #multi_file_container .btn-red { background-color: #3a8afd; }
 
 #multi_file_container #process_status { width: 100%; }
+
+#file_view_wrap { width: 100%; overflow: hidden; }
+#fileView::after { content: ''; display: block; clear: both; }
+#fileView > li { float: left; }
