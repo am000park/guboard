@@ -15,4 +15,9 @@
 
 #file_view_wrap { width: 100%; overflow: hidden; }
 #fileView::after { content: ''; display: block; clear: both; }
-#fileView > li { float: left; }
+#fileView > li { position: relative; float: left; }
+#fileView > li .remove_li { position: absolute; top: 0; right: 0; width: 20px; height: 20px; background-color: skyblue;
+    border-radius: 100px;
+    -o-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -webkit-border-radius: 100px; }

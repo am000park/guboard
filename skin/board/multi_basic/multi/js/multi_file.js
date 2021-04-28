@@ -4,12 +4,14 @@ var fileLists = [];
     
 function multlpleFilePreView(files) {
     var html = '';
+    var createSpan = document.createElement("span");
     var createLi = document.createElement("li");
+
+    createSpan.setAttribute("class", "remove_li");
     
     var reader = new FileReader();
     
     reader.onload = function (e) {
-        console.log(e);
         switch(files[files.length - 1].type.split('/')[0]) {
             case 'image':
                 var createNode = document.createElement('img');
@@ -23,6 +25,7 @@ function multlpleFilePreView(files) {
                 break;
         }
                 
+        createLi.appendChild(createSpan);
         createLi.appendChild(createNode);
 
         //reader.readAsDataURL(e);
